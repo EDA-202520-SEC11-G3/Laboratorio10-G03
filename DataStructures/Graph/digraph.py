@@ -9,7 +9,8 @@ def new_graph(order):
 
 def insert_vertex(graph, key_u, value_u):
     vertex = vtx.new_vertex(key_u, value_u)
-    return mlp.put(graph["vertices"], key_u, vertex)
+    mlp.put(graph["vertices"], key_u, vertex)
+    return graph
 
 
 def add_edge(my_graph, key_u, key_v, weight=1.0):
